@@ -133,6 +133,7 @@ public class AListAttachmentHandler implements AttachmentHandler {
                                 var attachment = new Attachment();
                                 attachment.setMetadata(metadata);
                                 attachment.setSpec(spec);
+                                attachment.setStatus(new Attachment.AttachmentStatus());
                                 return Mono.just(attachment);
                             });
                     });
